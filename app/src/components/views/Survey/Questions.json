@@ -1,0 +1,81 @@
+{
+"clearInvisibleValues": "onHidden",
+"questions": [
+        {
+            "name": "age",
+            "type": "text",
+            "title": "Age",
+            "placeHolder": "Age",
+            "isRequired": true,
+            "hasOther": true
+        }, 
+        {
+            "name":"gender",
+            "type":"dropdown",
+            "title":"Gender",
+            "isRequired":true,
+            "visibleId" : "{age}!=''",
+            "colCount":0,
+            "choices":[
+                "M",
+                "F",
+                "Other"
+            ]
+        },
+        {
+            "name": "driving-license",
+            "type": "dropdown",
+            "title": "Do you own a driving license? ",
+            "isRequired": true,
+            "choices":[
+                "Yes",
+                "No, I prefer using other transport"
+            ]
+
+        }, {
+            "name": "is-first-car",
+            "type": "dropdown",
+            "title":"Is this your first car?",
+            "isRequired":true,
+            "choices":[
+                "Yes",
+                "No"
+            ]
+        },{
+            "name": "drivetrain",
+            "type": "dropdown",
+            "title": "Which drivetrain do you prefer?",
+            "isRequired": true,
+            "choices":[
+                "FWD",
+                "RWD",
+                "I don't know"
+            ]
+        },
+        {
+            "name":"drifting",
+            "type":"dropdown",
+            "title":"Do you care about drifting?",
+            "isRequired": true,
+            "choices":[
+                "Yes",
+                "No"
+            ]
+        },
+        {
+            "name": "bmwdrived",
+            "type": "text",
+            "inputType": "number",
+            "title": "How many BMW did you drive?"
+        }, {
+            "name": "whichbmwdrived",
+            "type": "text",
+            "inputType": "text",
+            "title": "Which BMW did you drive?",
+            "placeHolder": "Which BMW did you drive?",
+            "isRequired": true
+       
+        }
+    ]
+
+}
